@@ -1,0 +1,5 @@
+*.log
+config.py
+.vscode/
+.venv/
+__pychache__/

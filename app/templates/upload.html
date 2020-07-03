@@ -1,0 +1,27 @@
+<html>
+    <head>
+    </head>
+    <body>
+		<h1>Upload to Database</h1>
+		<br>
+		<form action="" method="POST">
+			{{ form.hidden_tag() }}
+        <p>
+            <h5>{{ form.csvfile.label }} (CSV File Format Only)</h5><br>
+            {{ form.csvfile }}<br>
+			
+			{% with messages = get_flashed_messages() %}
+        	{% if messages %}
+        	<ul>
+            	{% for message in messages %}
+           			<li>{{ message }}</li>
+            	{% endfor %}
+        	</ul>
+        	{% endif %}
+        	{% endwith %}
+        </p>
+        <p>{{ form.submit() }}</p>
+		</form>
+
+    </body>
+</html>
