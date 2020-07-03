@@ -2,4 +2,4 @@
 config.py
 .vscode/
 .venv/
-__pychache__/
+__pychache__
